@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.BettingActivity">
+
+    <include layout="@layout/title_bar_betting"/>
+
+    <LinearLayout
+        android:id="@+id/lotteryInfo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@drawable/img_last_record">
+
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SmallTextSize"
+                android:text="重庆时时彩56期"/>
+
+            <GridView
+                android:id="@+id/gvRecordBall"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:listSelector="#00000000"
+                android:numColumns="5"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SmallTextSize"
+                android:text="第57期"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SmallTextSize"
+                android:text="@string/betting_cutoff"/>
+
+            <TextView
+                android:id="@+id/txtCountdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/LargestTextSize"
+                android:text="00:00"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/betting"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+        android:background="@color/base_color">
+
+        <com.baixun.lottery.widget.SuperTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/BasicTextSize"
+            android:text="@string/betting_empty"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:corner="5dp"
+            app:left_top_corner="true"
+            app:right_top_corner="true"
+            app:left_bottom_corner="true"
+            app:right_bottom_corner="true"
+            app:solid="#38393B"/>
+
+        <EditText
+            android:id="@+id/editMultiple"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/BasicTextSize"
+            android:text="1"
+            android:layout_centerInParent="true"
+            android:background="#38393B"/>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/editMultiple"
+            android:background="@drawable/img_setting_special"
+            android:textColor="@color/white"
+            android:textSize="@dimen/BasicTextSize"
+            android:text="元"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editMultiple"
+            android:textColor="@color/white"
+            android:textSize="@dimen/BasicTextSize"
+            android:text="@string/betting_multiple"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"/>
+
+        <com.baixun.lottery.widget.SuperTextView
+            android:id="@+id/btnBetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/BasicTextSize"
+            android:text="@string/betting"
+            android:layout_marginRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            app:corner="5dp"
+            app:left_top_corner="true"
+            app:right_top_corner="true"
+            app:left_bottom_corner="true"
+            app:right_bottom_corner="true"
+            app:solid="@color/red"/>
+
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/SmallerTextSize"
+            android:text="1"
+            android:background="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lotteryInfo"
+        android:layout_above="@+id/betting"/>
+
+</RelativeLayout>

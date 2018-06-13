@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_chongqing_cai"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="@string/navigation_chongqing_cai" />
+        <item
+            android:id="@+id/navigation_item_recharge"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="@string/navigation_recharge" />
+        <item
+            android:id="@+id/navigation_item_withdraw"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="@string/navigation_withdraw" />
+        <item
+            android:id="@+id/navigation_item_promotions"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="@string/navigation_promotions" />
+        <item
+            android:id="@+id/navigation_item_user_center"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="@string/navigation_user_center" />
+
+        <item
+            android:id="@+id/navigation_item_help_center"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="@string/navigation_help_center" />
+    </group>
+</menu>

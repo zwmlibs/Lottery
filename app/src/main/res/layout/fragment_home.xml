@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_left" />
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btnMenu"
+                android:src="@drawable/home_logo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/imgLogo"
+                android:layout_marginLeft="20dp"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:id="@+id/btnTrialPlay"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/home_trial_play">
+
+                    <TextView
+                        style="@style/home_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/home_trial_play" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/home_nav_demo" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnRegister"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btnTrialPlay"
+                    android:background="@color/home_register">
+
+                    <TextView
+                        style="@style/home_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/home_register" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/home_nav_regist" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnLogin"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btnRegister"
+                    android:background="@color/home_login">
+
+                    <TextView
+                        style="@style/home_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/home_login" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/home_nav_login" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/SmallTextSize"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/txtBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/SmallTextSize"
+                        android:textColor="@color/home_trial_play"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/btnCqssc"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@color/home_chongqing_cai">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/home_content_cqssc" />
+
+                    <TextView
+                        style="@style/home_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/home_chongqing_cai" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnAhks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/btnCqssc"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/home_chongqing_cai">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/home_content_ahks" />
+
+                    <TextView
+                        style="@style/home_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/home_ahks" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btnWaitTing"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="6"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_content_waittingperson" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:id="@+id/btnBjsc"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="7">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_content_bjsc" />
+
+                <TextView
+                    style="@style/home_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="5dp"
+                    android:text="@string/home_bjsc" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn11x5"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:background="@color/home_11x5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/home_content_11x5" />
+
+                <TextView
+                    style="@style/home_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="5dp"
+                    android:text="@string/home_11x5"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="130dp">
+
+                <RelativeLayout
+                    android:id="@+id/btnFfc"
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:background="@color/home_ffc">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/home_content_ffc" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnSfc"
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/home_sfc">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/home_content_sfc" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnWfc"
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/home_wfc">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/home_content_wfc" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnFtc"
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/home_ftc">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/home_content_ftc" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <RelativeLayout
+                    android:id="@+id/btnPl3"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="5"
+                    android:background="@color/home_11x5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/home_content_pl3" />
+
+                    <TextView
+                        style="@style/home_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/home_pl3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnMore"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="4"
+                    android:background="@color/home_more"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/home_text"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/home_more" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

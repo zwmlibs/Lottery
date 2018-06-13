@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_recordball"/>
+
+    <ImageView
+        android:id="@+id/imgNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/item_ask"/>
+
+    <ProgressBar
+        android:id="@+id/pbRun"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:indeterminateDrawable="@drawable/run_animation" />
+
+    <ImageView
+        android:id="@+id/imgMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ball_light"/>
+
+    <ImageView
+        android:id="@+id/imgWhirl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ball_rot"/>
+
+</RelativeLayout>

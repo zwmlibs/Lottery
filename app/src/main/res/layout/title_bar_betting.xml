@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/base_color">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/icon_back"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/BasicTextSize"
+            android:text="@string/betting_how_to_play"/>
+
+        <com.baixun.lottery.widget.SuperTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/BasicTextSize"
+            android:text="投注玩法选择"
+            android:drawableRight="@drawable/icon_back"
+            app:corner="5dp"
+            app:left_top_corner="true"
+            app:left_bottom_corner="true"
+            app:right_bottom_corner="true"
+            app:right_top_corner="true"
+            app:solid="@color/base_color"
+            app:stroke_color="@color/white"
+            app:stroke_width="1dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

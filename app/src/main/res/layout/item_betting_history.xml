@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:weightSum="11">
+
+    <TextView
+        android:id="@+id/txtNumberOfPeriods"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:text="123"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/txtPrizeNumber"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:text="1 2 3 4 5"/>
+
+    <TextView
+        android:id="@+id/txtThousands"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:text="123"/>
+
+    <TextView
+        android:id="@+id/txtOnePlace"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:text="123"/>
+
+    <TextView
+        android:id="@+id/txtHowToPlay"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:text="123"/>
+
+</LinearLayout>

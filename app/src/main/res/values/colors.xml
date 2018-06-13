@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#061928</color>
+    <color name="colorPrimaryDark">#061928</color>
+    <color name="colorAccent">#061928</color>
+
+    <color name="base_color">#061928</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#0d732c</color>
+    <color name="red">#D91D36</color>
+    <color name="black">#000000</color>
+    <color name="gray">#4A4549</color>
+
+    <color name="home_trial_play">#ECAC0C</color>
+    <color name="home_register">#3E9BA3</color>
+    <color name="home_login">#565DC5</color>
+    <color name="home_chongqing_cai">#2098E6</color>
+    <color name="home_11x5">#432887</color>
+    <color name="home_ffc">#008F01</color>
+    <color name="home_sfc">#BD4C4E</color>
+    <color name="home_wfc">#10BEF1</color>
+    <color name="home_ftc">#565DC5</color>
+    <color name="home_more">#EA8B2D</color>
+
+    <color name="login_text">#CACCCB</color>
+
+
+</resources>
